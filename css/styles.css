@@ -137,7 +137,7 @@ img {
 			rgba(46, 47, 66, 0.7),
 			rgba(46, 47, 66, 0.7)
 		),
-		url(../images/people-office.jpeg);
+		url(../images/people-office-320.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -147,6 +147,18 @@ img {
 	text-align: center;
 	letter-spacing: 0.02em;
 	margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+	.main__section-head {
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/people-office-3202x.jpg);
+	}
 }
 .main__title-content {
 	display: flex;
@@ -613,12 +625,12 @@ img {
 	color: #8e8f99;
 	margin-bottom: 4px;
 }
-.modal-label-flex{
+.modal-label-flex {
 	display: flex;
 	align-items: center;
 	gap: 8px;
 }
-.modal-label-text{
+.modal-label-text {
 	width: 231px;
 }
 .modal-label:last-child {
@@ -749,7 +761,7 @@ img {
 .burger-menu.is-open {
 	transform: translate(0);
 }
-.burger-menu__nav{
+.burger-menu__nav {
 	margin-bottom: auto;
 }
 .burger-menu__item {
@@ -783,7 +795,7 @@ img {
 	line-height: 1.2;
 	text-align: left;
 }
-.bm--iris{
+.bm--iris {
 	color: rgb(77, 90, 229);
 }
 .burger-menu__social-list {
@@ -814,8 +826,6 @@ img {
 	color: rgb(64, 75, 191);
 }
 
-
-
 @media (min-width: 320px) {
 	.container {
 		width: 320px;
@@ -837,14 +847,6 @@ img {
 		display: block;
 	}
 	/* main */
-	.main__section-head {
-		padding: 96px 0;
-		background-image: linear-gradient(
-				rgba(46, 47, 66, 0.7),
-				rgba(46, 47, 66, 0.7)
-			),
-			url(../images/people-office-320.jpg);
-	}
 	.main__title {
 		width: 216px;
 		font-size: 36px;
@@ -884,7 +886,8 @@ img {
 	.portfolio--item-context {
 		box-sizing: border-box;
 		/* CORNFLOWER */
-		box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+		box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+			0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	}
 	.main__section-enefits,
 	.main__section-team,
@@ -965,6 +968,18 @@ img {
 				rgba(46, 47, 66, 0.7)
 			),
 			url(../images/people-office-768.jpg);
+	}
+	@media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		.main__section-head {
+			background-image: linear-gradient(
+					rgba(46, 47, 66, 0.7),
+					rgba(46, 47, 66, 0.7)
+				),
+				url(../images/people-office-7682x.jpg);
+		}
 	}
 	.main__title {
 		width: 496px;
@@ -1049,7 +1064,7 @@ img {
 	.modal {
 		width: 408px;
 	}
-	.modal-label-text{
+	.modal-label-text {
 		width: 338px;
 	}
 }
@@ -1075,6 +1090,23 @@ img {
 	/* section-head */
 	.main__section-head {
 		padding: 188px 0;
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/people-office.jpeg);
+	}
+	@media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		.main__section-head {
+			background-image: linear-gradient(
+					rgba(46, 47, 66, 0.7),
+					rgba(46, 47, 66, 0.7)
+				),
+				url(../images/people-office2x.jpg);
+		}
 	}
 	.main__title {
 		margin-bottom: 48px;
@@ -1114,7 +1146,7 @@ img {
 	.main__portfolio-item {
 		flex-basis: calc((100% - 48px) / 3);
 	}
-	.portfolio--item-context{
+	.portfolio--item-context {
 		box-shadow: none;
 	}
 
@@ -1135,17 +1167,5 @@ img {
 	.footer__socials.footer-basis {
 		flex-basis: auto;
 		margin: 0 80px 0 0;
-	}
-}
-@media (min-device-pixel-ratio: 2),
-	(-webkit-min-device-pixel-ratio: 2),
-	(min-resolution: 192dpi),
-	(min-resolution: 2dppx){
-	.main__section-head {
-		background-image: linear-gradient(
-				rgba(46, 47, 66, 0.7),
-				rgba(46, 47, 66, 0.7)
-			),
-			url(../images/people-office2x.jpg);
 	}
 }
